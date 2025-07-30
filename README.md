@@ -1,5 +1,8 @@
 # Multi-Theme Switcher (React + TypeScript)
 
+**Live Demo:** https://swathi-v-react-frontend-hipster-inc.vercel.app  
+**Repo:** https://github.com/swathisiva1519/SwathiV-ReactFrontend-HipsterInc
+
 A production-ready assignment app with **three distinct themes** (layout + fonts + spacing + colors), theme persistence, API data, routing, and responsive design.
 
 ##  Features
@@ -12,35 +15,13 @@ A production-ready assignment app with **three distinct themes** (layout + fonts
 - **localStorage** persistence across reloads
 - Pages: **Home / About / Contact** (React Router)
 - **FakeStore API** products rendered as cards
-- **styled-components** (no big UI libraries)
+- **styled-components** (no large UI libraries)
 - Subtle cross-fade **animation** on theme switch
 - Fully **responsive** (desktop & mobile)
-- **TypeScript** strict mode
-- Basic security hardening (CSP, no dangerouslySetInnerHTML, abort fetch)
+- **TypeScript** (strict mode)
+- Basic security hardening (CSP, no `dangerouslySetInnerHTML`, `AbortController`)
 
 ##  Quick Start
 ```bash
 npm i
 npm run dev
-```
-
-Build & preview:
-```bash
-npm run build && npm run preview
-```
-
-##  Security Notes
-- No `dangerouslySetInnerHTML` anywhere.
-- Content-Security-Policy in `index.html` restricts sources.
-- External anchor links use `rel="noopener noreferrer"`.
-- `AbortController` avoids hanging fetches.
-- Only a theme key is stored in `localStorage`.
-
-##  Manual Test Checklist
-- Theme 1 loads by default.
-- Switch to Theme 2 (dark + sidebar) and Theme 3 (colorful cards).
-- Refresh → selected theme persists.
-- Home shows loading → products → cards (with lazy images).
-- Resize window → grid becomes 2-col / 1-col on smaller screens.
-- Navigate to About / Contact → theme applies globally.
-```
